@@ -1,0 +1,247 @@
+
+
+
+/* fv */
+.fv-wrapper{
+    height: 376px;   /* 464px(fvの下端)-88px(headerのheight)*/
+}
+.fv-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 387px;
+    width: 1100px;
+    object-fit: cover;
+    /* opacity: 0.8; */
+}
+
+.fv-bg-black{
+    position: absolute;
+    z-index: -2;
+    top: 0px;
+    right: 0px;
+    width: 780px;
+    height: 464px;
+    background-color: #222222;
+}
+.main-copy{
+    position: absolute;
+    top: 156px;
+    right: 170px;
+}
+
+    /* .main-copy-ja,enのfont情報はcommon.cssに */
+
+
+/* vision */
+.vision{
+    padding: 120px 0;
+    margin: 0 4vw;
+}
+.vision-wrapper{
+    max-width: 419px;
+    min-height: 609px;
+    margin: 0 auto;
+}
+.vision-subhead{
+    margin: 25px 0;
+}
+.vision-text{
+    max-width: 530px;
+    min-height: 152px;
+    font-size: 1.4rem;
+    letter-spacing: -1px;
+    line-height: 3.2rem;
+}
+
+
+/* CEO-message */
+.CEO-message-wrapper{
+    position: relative;
+    max-width: 1100px;
+    height: 900px;
+    margin: 0 4vw;
+}
+.photo-wrapper{
+    position: relative;
+    z-index: 10;
+}
+.CEO-img{
+    width: 420px;
+    height: 282.5px;
+}
+.CEO-message-subwrapper{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 770px;
+    height: 756px;
+    background-color: #F0F0F0;
+}
+.CEO-message-head{
+    margin: 120px auto 30px;
+    max-width: 400px;
+}
+.CEO-message-text{
+    margin: 0px auto 90px;
+    width: 400px;
+    font-size: 1.4rem;
+    letter-spacing: -1px;
+    line-height: 3.2rem;
+}
+
+/* company */
+.company{
+    padding: 120px 0px;
+    margin: 0 4vw;
+}
+.company-wrapper{
+    margin: 0 auto;
+    max-width: 1100px;
+}
+.company-head{
+    padding-bottom: 30px;
+    border-bottom: 1px solid #DDDDDD;
+}
+.company-info{
+    width: 100%;
+    margin-bottom: 40px;
+    padding-left: 27vw;
+}
+
+th{
+    padding: 17px 0 18px 0;
+    text-align: left;
+    font-size: 1.6rem;
+    border-bottom: 1px solid #DDDDDD;
+    font-weight: bold;
+    width: 144px;
+}
+td{
+    position: relative;
+    padding: 17px 0 18px 0;
+    text-align: left;
+    font-size: 1.6rem;
+    border-bottom: 1px solid #DDDDDD;
+}
+td::before{
+    position: absolute;
+    content: "";
+    border-bottom: 1px solid #DDDDDD;
+    width: 100%;
+    left: -5px;
+    top: 59px;
+}
+
+
+
+/* responsive_tablet */
+@media(max-width:800px){
+    /* fv */
+    .fv-wrapper{
+        height: 555px; /*615(fv-bg-blackのheight)-60(headerのheight)*/
+    }
+    .fv-img{
+        width: 587px;
+        height:529px;
+    }
+    .fv-bg-black{
+        width: 406px;
+        height: 615px;
+    }
+    .main-copy{
+        top: 220px;
+        right: 98px;
+    }
+
+    /* vision */
+    .vision{
+        padding: 80px 0;
+    }
+    /* CEO message */
+    .CEO-message-wrapper{
+        height: 818px;
+    }
+    .CEO-img{
+        width: 320px;
+        height: 216px;
+    }
+    .CEO-message-subwrapper{
+        width: 494px;
+        height: 687px;
+    }
+    .CEO-message-head{
+        margin: 109px auto 24px;
+    }
+    .CEO-message-text{
+        width: 415px;
+        height: 431px;
+        line-height: 2.7rem;
+    }
+
+    /* company */
+    .company-info{
+        padding-left: 30px;
+    }
+    iframe{
+        width: 92vw;
+        height: 280px;
+    }
+}
+
+
+@media(max-width:425px){
+    /* fv */
+    .fv-wrapper{
+        height: 389px; /*449-60*/
+    }
+    .fv-img{
+        width: 287px;
+        height: 387px;
+    }
+    .fv-bg-black{
+        width: 198px;
+        height: 449px;
+    }
+    .main-copy{
+        top: 140px;
+        right: 29px;
+    }
+
+    /* vision */
+    .vision-subhead{
+        margin: 32px 0;
+    }
+    .CEO-message-wrapper{
+        margin-left: 0px;
+        height: 930px;
+    }
+    .CEO-img{
+        width: 340px;
+        height: 230px;
+    }
+    .CEO-message-subwrapper{
+        width: 92vw;
+        height: 800px;
+    }
+    .CEO-message-head{
+        margin-left: 28px;
+    }
+    .CEO-message-text{
+        width: 288px;
+        height: 525px;
+        font-size: 1.4rem;
+    }
+
+    /* company */
+    .company{
+        padding: 80px 0;
+    }
+    .company-info{
+        padding-left: 0;
+    }
+    iframe{
+        height: 470px;
+    }
+}
