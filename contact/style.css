@@ -1,0 +1,203 @@
+p{
+    display: inline-block;
+}
+
+/* fv */
+.fv-wrapper{
+    height: 376px;   /* 464px(fvの下端)-88px(headerのheight)*/
+}
+.fv-img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 387px;
+    width: 1100px;
+    object-fit: cover;
+    /* opacity: 0.8; */
+}
+
+.fv-bg-black{
+    position: absolute;
+    z-index: -2;
+    top: 0px;
+    right: 0px;
+    width: 780px;
+    height: 464px;
+    background-color: #222222;
+}
+.main-copy{
+    position: absolute;
+    top: 156px;
+    right: 170px;
+}
+
+/* contact */
+.must-icon{
+    background-color: #333333;
+    color: white;
+    font-size: 1.2rem;
+    padding: 0 5px;
+    margin-left: 20px;
+    position: relative;
+    bottom: 2px;
+}
+
+.contact-wrapper{
+    margin: 120px 370px;
+    font-size: 1.6rem;
+}
+.contact-head{
+    margin-bottom: 52px;
+}
+
+.inquiry-type{
+    display: flex;
+    margin-bottom: 42px;
+}
+.inquiry-type li{
+    margin: 18px 50px 0px 0px;
+}
+input[type=radio]{
+    width: 21px;
+    height: 21px;
+    position: relative;
+    top: 4px;
+}
+
+input[type=text],[type=tel],[type=email]{
+    width: 100%;
+    line-height: 40px;
+    margin:10px  auto 42px;
+}
+
+textarea{
+    width: 100%;
+    height: 230px;
+    margin:10px  auto 42px;
+}
+
+.privacy-head{
+    font-weight: bold   ;
+}
+.privacy-text{
+    width: 100%;
+    height: 252px;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin: 10px auto 0px;
+    padding: 2px;
+    border: 1px solid #333333;
+}
+.privacy-text::-webkit-scrollbar{
+    width: 10px;
+}
+.privacy-text::-webkit-scrollbar-track{
+    background-color: #fff;
+    border-left: solid 1px #ececec;
+}
+.privacy-text::-webkit-scrollbar-thumb{
+    background-color: #ccc;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 2px #fff;
+}
+
+.agree{
+    margin: 42px auto 42px;
+    display: block;
+    text-align: center;
+}
+input[type=checkbox]{
+    width: 21px;
+    height: 21px;
+    position: relative;
+    top: 4px;
+}
+
+.submit-btn{
+    width: 160px;
+    height: 36px;
+    display: block;
+    font-weight: bold;
+    font-family: Montserrat Medium;
+    color: white;
+    background-color: #000000;
+    line-height: 36px;
+    text-align: center;
+    margin: 0 auto;
+}
+.submit-btn:hover{
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+
+@media(max-width:800px){
+     /* fv */
+    .fv-wrapper{
+        height: 555px; /*615(fv-bg-blackのheight)-60(headerのheight)*/
+    }
+    .fv-img{
+        width: 578px;
+        height:529px;
+    }
+    .fv-bg-black{
+        width: 406px;
+        height: 615px;
+    }
+    .main-copy{
+        top: 132px;
+        right: 50px;
+    }
+
+    /* contact */
+    .contact-wrapper {
+        margin: 135px 50px 200px;
+    }
+    .inquiry-type{
+        margin-bottom: 35px;
+    }
+}
+
+
+@media(max-width:425px){
+    /* fv */
+    .fv-wrapper{
+        height: 389px; /*449-60*/
+    }
+    .fv-img{
+        width: 287px;
+        height: 387px;
+    }
+    .fv-bg-black{
+        width: 198px;
+        height: 449px;
+    }
+    .main-copy{
+        top: 140px;
+        right: 29px;
+    }
+    
+    /* contact */
+    .contact-wrapper {
+        margin: 80px 4vw;
+    }
+    .inquiry-type{
+        flex-direction: column;
+    }
+    .inquiry-type li {
+        margin: 14px 50px 0 0px;
+    }
+    input[type=checkbox],[type=radio]{
+        width: 15px;
+        height: 15px;
+        position: relative;
+        top: 4px;
+    }
+    .contact-head,.privacy-text,.agree-text{
+        font-size: 1.3rem;
+        letter-spacing: -1px;
+        line-height: 2.4rem;
+    }
+}
